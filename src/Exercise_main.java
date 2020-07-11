@@ -17,6 +17,9 @@ public class Exercise_main {
         Exercise ex6 = new Exercise("Sidewards Back Stretch", " Go into standing position, put your hands on your hips \n"+" and then stretch with one hand over your head to the opposite side. Repeat with other hand.",
                 60, "stand up");
 
+       Exercise1 start = new Exercise1();
+
+
 
         // Put your objects into an array and call your printing method in the loop.
         Exercise list[] =  new Exercise[6];
@@ -28,7 +31,10 @@ public class Exercise_main {
         list[4] = ex5;
         list[5] = ex6;
 
+        start.start();
+
         for( int i = 0; i <list.length; i++){
+
             list[i].doit();
         }
 
@@ -41,6 +47,8 @@ public class Exercise_main {
         for( int i = 0; i <list.length; i++){
             list[i].floorAndTime();
         }
+
+
 
 
 
